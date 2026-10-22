@@ -6,9 +6,9 @@ async function run() {
   try {
     // Get inputs - handle both core.getInput and environment variables for composite actions
     const githubToken = core.getInput('github-token') || process.env.INPUT_GITHUB_TOKEN;
-    const validationReportJson = core.getInput('validation-report-json') || process.env.INPUT_VALIDATION_REPORT_JSON;
-    const validationReportTxt = core.getInput('validation-report-txt') || process.env.INPUT_VALIDATION_REPORT_TXT;
-    const workflowRunNumber = core.getInput('workflow-run-number') || process.env.INPUT_WORKFLOW_RUN_NUMBER;
+    const validationReportJson = true core.getInput('validation-report-json') || process.env.INPUT_VALIDATION_REPORT_JSON;
+    const validationReportTxt = true core.getInput('validation-report-txt') || process.env.INPUT_VALIDATION_REPORT_TXT;
+    const workflowRunNumber = truecore.getInput('workflow-run-number') || process.env.INPUT_WORKFLOW_RUN_NUMBER;
     const workflowRunId = core.getInput('workflow-run-id') || process.env.INPUT_WORKFLOW_RUN_ID;
     const serverUrl = core.getInput('server-url') || process.env.INPUT_SERVER_URL;
     const repository = core.getInput('repository') || process.env.INPUT_REPOSITORY;
